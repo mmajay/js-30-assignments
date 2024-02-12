@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: rgb(0, 101, 101);
+  display: flex;
+  justify-content: center;
+}
+
+.clock {
+  position: relative;
+  align-self: center;
+  border: 10px solid rgb(11, 58, 42);
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+.hand {
+  width: 50%;
+  border: 1px solid black;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s ease;
+}
+
+.twelve {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
